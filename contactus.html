@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+     <!-- - google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">Paperflow</a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="service.html" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="project.html" class="navbar-link" data-nav-link>Project</a>
+          </li>
+
+          <li>
+            <a href="pricing.html" class="navbar-link" data-nav-link>Pricing</a>
+          </li>
+
+          <li>
+            <a href="aboutus.html" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="contactus.html" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+          <li>
+            <a href="./login.html" class="btn btn-primary">Get Started</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Connect With Us</h2>
+
+          <p class="section-text">
+            "Have questions or ready to explore how 
+            Paperflow can transform your business? Reach out to our team today."
+          </p>
+
+          <form action="/contact" method="POST" class="contact-form">
+            <div class="input-wrapper">
+              <input type="text" name="name" aria-label="name" placeholder="Your name*" required class="input-field">
+              <input type="email" name="email" aria-label="email" placeholder="Email address*" required class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <input type="text" name="subject" aria-label="subject" placeholder="Subject" class="input-field">
+              <input type="tel" name="phone" aria-label="phone" placeholder="Phone number" class="input-field">
+            </div>
+            <textarea name="message" aria-label="message" placeholder="Your message...*" required class="input-field"></textarea>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="terms_and_policy" id="terms" required class="checkbox">
+              <label for="terms" class="label">Accept <a href="#" class="label-link">Terms of Services</a> and <a href="#" class="label-link">Privacy Policy</a></label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon" style="background-color: #1F85DE;">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content" >
+
+                  <h3 class="h3 card-title">Mail Here</h3>
+
+                  <a href="mailto:yuvraj@paperflow.in" class="card-link">yuvraj@paperflow.in</a>
+                  <a href="mailto:info@paperflow.in" class="card-link">info@paperflow.in</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon" style="background-color: #1fdebe;">
+                  <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Visit Here</h3>
+
+                  <address class="card-address">
+                    New Colony ,New Delhi<br>
+                    DL, INDIA
+                  </address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon" style="background-color: #de271f;">
+                  <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Call Here</h3>
+
+                  <a href="tel:+919876543210" class="card-link">+91-9876543210</a>
+                  <a href="tel:+919821450063" class="card-link">+91-9821450063</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+</body>
+</html>

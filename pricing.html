@@ -1,0 +1,266 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="./css/style.css">
+     <!-- - google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <style>
+     .popup {
+       display: none;
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 80%;
+       max-width: 500px;
+       padding: 20px;
+       color: white;
+       z-index: 1000;
+     }
+ 
+     .popup-content {
+       text-align: center;
+     }
+ 
+     .close-btn {
+       background-color: #ffffff;
+       color: #000000;
+       border: none;
+       padding: 10px 20px;
+       cursor: pointer;
+       margin-top: 20px;
+     }
+     .disable-background {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.5);
+       z-index: 999;
+     }
+    </style>
+ </head>
+ <body>
+ 
+ <header class="header" data-header>
+  <div class="container">
+ 
+    <a href="index.html" class="logo">Paperflow</a>
+ 
+    <nav class="navbar container" data-navbar>
+      <ul class="navbar-list">
+ 
+        <li>
+          <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+ 
+        <li>
+          <a href="service.html" class="navbar-link" data-nav-link>Services</a>
+        </li>
+ 
+        <li>
+          <a href="project.html" class="navbar-link" data-nav-link>Project</a>
+        </li>
+ 
+        <li>
+         <a href="pricing.html" class="navbar-link" data-nav-link>Pricing</a>
+       </li>
+ 
+        <li>
+          <a href="aboutus.html" class="navbar-link" data-nav-link>About Us</a>
+        </li>
+ 
+        <li>
+          <a href="contactus.html" class="navbar-link" data-nav-link>Contact Us</a>
+        </li>
+ 
+        <li>
+          <a href="./login.html" class="btn btn-primary">Get Started</a>
+        </li>
+ 
+      </ul>
+    </nav>
+ 
+    <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+      <ion-icon name="menu-outline" class="open"></ion-icon>
+      <ion-icon name="close-outline" class="close"></ion-icon>
+    </button>
+ 
+  </div>
+ </header>
+ 
+     <!-- Pricing -->
+ 
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+ 
+          <h2 class="h2 section-title">Amazing Pricing</h2>
+ 
+          <p class="section-text">
+             Paperflow's pricing section offers clear subscription plans, 
+             flexible billing, feature breakdowns, and may include free trials or demos.
+          </p>
+ 
+          <ul class="grid-list">
+ 
+            <li>
+              <div class="service-card">
+ 
+                <div class="card-icon" style="background-color: #13c4a1">
+                  <ion-icon name="chatbox"></ion-icon>
+                </div>
+ 
+                <h3 class="h3">
+                  <a href="#" class="card-title">Graphic Designing</a>
+                </h3>
+ 
+                <p class="card-text">
+                  "Get standout designs for your brand from our creative team.
+                   Logos, ads, and more to make your business shine."
+                </p>
+                <br>
+                <a href="#" class="btn btn-primary" onclick="showPopup('graphic')">Book Now starting at 20$</a>
+                
+              </div>
+            </li>
+            <li>
+                <div class="service-card">
+   
+                  <div class="card-icon" style="background-color: #6610f2">
+                    <ion-icon name="chatbox"></ion-icon>
+                  </div>
+   
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Digital Marketing</a>
+                  </h3>
+   
+                  <p class="card-text">
+                    "Boost your online presence with our digital marketing expertise.
+                  From social media to SEO, we'll help your brand thrive."
+                  </p>
+                  <br>
+                  <a href="#" class="btn btn-primary" onclick="showPopup('graphic')">Book Now starting at 20$</a>
+                  
+                </div>
+              </li>
+ 
+              <li>
+                <div class="service-card">
+   
+                  <div class="card-icon" style="background-color: #ffb700">
+                    <ion-icon name="chatbox"></ion-icon>
+                  </div>
+   
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Video Editing</a>
+                  </h3>
+   
+                  <p class="card-text">
+                    "Elevate your videos with our editing prowess. 
+                 From polished clips to captivating content, we'll bring your vision to life."
+                  </p>
+                  <br>
+                  <a href="#" class="btn btn-primary" onclick="showPopup('graphic')">Book Now starting at 20$</a>
+                  
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+   
+                  <div class="card-icon" style="background-color: #fc3549">
+                    <ion-icon name="chatbox"></ion-icon>
+                  </div>
+   
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Content Creation</a>
+                  </h3>
+   
+                  <p class="card-text">
+                    "Craft compelling content with our expert team. 
+                 From engaging articles to captivating visuals, we'll tell your story effectively."
+                  </p>
+                  <br>
+                  <a href="#" class="btn btn-primary" onclick="showPopup('graphic')">Book Now starting at 20$</a>
+                  
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+   
+                  <div class="card-icon" style="background-color: #00d280">
+                    <ion-icon name="chatbox"></ion-icon>
+                  </div>
+   
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Email Markteing</a>
+                  </h3>
+   
+                  <p class="card-text">
+                    "Drive results with our email marketing solutions. 
+                    From eye-catching templates to strategic campaigns, we'll help you reach your audience effectively."
+                  </p>
+                  <br>
+                  <a href="#" class="btn btn-primary" onclick="showPopup('graphic')">Book Now starting at 20$</a>
+                  
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+   
+                  <div class="card-icon" style="background-color: #ff612f">
+                    <ion-icon name="chatbox"></ion-icon>
+                  </div>
+   
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Online Advertisement</a>
+                  </h3>
+   
+                  <p class="card-text">
+                    "Maximize your online reach with our ad solutions.
+                  From targeted campaigns to eye-catching visuals, we'll help you stand out."
+                  </p>
+                  <br>
+                  <a href="#" class="btn btn-primary" onclick="showPopup('graphic')">Book Now starting at 20$</a>
+                  
+                </div>
+              </li>
+          </ul>
+ 
+        </div>
+      </section>
+ 
+ <!-- Popup -->
+ <div class="popup" id="popup">
+   <div class="popup-content">
+     <img src="./assets/images/wlcm.png" alt="Popup Image" width="400" height="200">
+     <button class="close-btn" onclick="closePopup()">Close</button>
+   </div>
+ </div>
+ 
+ <div id="disable-background" class="disable-background" style="display: none;"></div>
+ 
+ <script>
+   function showPopup(service) {
+     var popup = document.getElementById('popup');
+     popup.style.display = 'block';
+     document.getElementById('disable-background').style.display = 'block';
+   }
+   function closePopup() {
+     var popup = document.getElementById('popup');
+     popup.style.display = 'none';
+     document.getElementById('disable-background').style.display = 'none';
+   }
+ </script>
+ </body>
+ </html>
