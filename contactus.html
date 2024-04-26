@@ -69,7 +69,7 @@
             Paperflow can transform your business? Reach out to our team today."
           </p>
 
-          <form action="/contact" method="POST" class="contact-form">
+          <form action="/contact" method="POST" class="contact-form" id="contact-form">
             <div class="input-wrapper">
               <input type="text" name="name" aria-label="name" placeholder="Your name*" required class="input-field">
               <input type="email" name="email" aria-label="email" placeholder="Email address*" required class="input-field">
@@ -83,7 +83,7 @@
               <input type="checkbox" name="terms_and_policy" id="terms" required class="checkbox">
               <label for="terms" class="label">Accept <a href="#" class="label-link">Terms of Services</a> and <a href="#" class="label-link">Privacy Policy</a></label>
             </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
           </form>
           
 
@@ -155,5 +155,20 @@
 
     </article>
   </main>
+
+<script>
+  // Get the form element
+  const form = document.getElementById('contact-form');
+
+  // Add event listener for form submission
+  form.addEventListener('submit', function(event) {
+    // Prevent default form submission
+    event.preventDefault();
+
+    // Show alert when form is submitted
+    alert('Message sent successfully');
+  });
+</script>
+
 </body>
 </html>
